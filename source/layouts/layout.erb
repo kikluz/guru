@@ -18,19 +18,16 @@
 </head>
 
 <body>
+  
+  <%= partial "partials/nav" %>
 
-<!--  <nav>
-<%= partial "partials/nav" %>
-<hr>
-</nav> -->
+  <main id="main">
+    <%= yield %>
+  </main>
 
-<main id="main">
-  <%= yield %>
-</main>
-
-<!--  <footer>
-<%= partial "partials/footer" %>
-</footer> -->
+  <!--  <footer>
+  <%= partial "partials/footer" %>
+  </footer> -->
 </body>
 
 </html>

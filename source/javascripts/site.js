@@ -1,1 +1,2 @@
-//= require "_jquery"
+//= require "_nav"
+//= require "_slide"
