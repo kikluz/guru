@@ -1,14 +1,20 @@
 <nav class="nav-bar">
   <div class="nav-hold">
-    <a href="#" class="nav-logo">Guru</a>
+
+    <% link_to '/index.html', :relative => true, class: 'navbar-brand nav-logo' do %>
+      <%= image_tag 'phoenix-wing.png' %>
+    <% end %>
+
     <a id="nav-menu" class="nav-menu">
     	<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
     </a>
     <ul class="nav-list" id="nav">
-      <li><a href="#about-me">About</a></li>
-      <li><a href="#cat-pictures">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#lorem-ipsum">Lorem</a></li>
+      <li>
+        <%= link_to 'Home', '/index.html', :relative => true %>
+        </li>
+      <li>
+        <%= link_to 'About', '/info.html', :relative => true %>
+        </li>
     </ul>
   </div>
 </nav>

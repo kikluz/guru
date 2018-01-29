@@ -9,83 +9,20 @@
   list-style:         none;
 }
 
-
+hr {
+  color: #FF8F36;
+}
 a, a:visited {
   text-decoration:  none;
 }
+h1, h2 {
+    color: #FF8F36;
+  }
 //--------------------------------------------
 // https://codepen.io/SmaragdaTh/pen/LERvNq
 //--------------------------------------------
 
-/* WIDTH SETTING */
-.nav-hold {
-  width: 95%;
-  max-width: 1000px;
-  margin: 0 auto;
-}
 
-.nav-bar {
-  width: 100%;
-  background: #222;
-}
-
-.nav-hold {
-  overflow: hidden;
-}
-
-.nav-logo {
-  float:    left;
-  display:  block;
-  color:    #f9f9f9;
-  padding:  20px;
-}
-
-.nav-list {
-  float: right;
-}
-
-.nav-list li {
-  float: left;
-}
-
-.nav-list li a {
-  display:  block;
-  padding:  20px 10px;
-  color:    #f9f9f9;
-}
-
-.nav-menu {
-  color:    #f9f9f9;
-  float:    right;
-  padding:  20px 10px;
-  display:  none;
-  cursor:   pointer;
-}
-
-@media (max-width: 700px) {
-  .nav-menu {
-    display:  block;
-  }
-
-  .nav-list {
-    /*float: left;*/
-    width:    100%;
-    height:   0;
-  }
-
-  .nav-open {
-    height: auto;
-  }
-
-  .nav-list li {
-    width:    100%;
-  }
-  
-  .nav-list li a {
-    padding:  10px 10px;
-  }
-
-}
 ///
 // slideshow
 
@@ -235,12 +172,28 @@ font-size: 2em;
     padding:5px;
   }
 }
+.module {
+  padding-top: 2em;
+}
 
-
-
-
-
-
-
-
-
+.footer-social {
+  img {
+    width: 48px;
+  }
+  text-align: center;
+  h2 {text-align: center;}
+  a {
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px; 
+  }
+  a:hover {
+    background-color: #eaeaea;
+  }
+}
+.note {
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 16px 0;
+    text-align: center;
+}
