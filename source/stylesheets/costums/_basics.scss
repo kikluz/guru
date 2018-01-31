@@ -1,13 +1,4 @@
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing:    border-box;
-  box-sizing:         border-box;
-  margin:             0px;
-  padding:            0px;
-  list-style:         none;
-}
+
 
 hr {
   color: #FF8F36;
@@ -21,16 +12,6 @@ h1, h2 {
 //--------------------------------------------
 // https://codepen.io/SmaragdaTh/pen/LERvNq
 //--------------------------------------------
-
-
-///
-// slideshow
-
-.container {
-  width: 60%;
-  margin: auto;
-  position: relative;
-}
 
 img {
   width: 100%;
@@ -67,8 +48,12 @@ img {
 }
 // Using Neat grid from myneat.cscss file
 .container {
-	@include grid-column(12, $neat-grid);
+  max-width: 1000px;
+  margin: 0 auto;
 }
+// .container {
+// 	@include grid-column(12, $neat-grid);
+// }
 
 // Custom grid for mobile from myneat.cscss file
 .section_1 {
@@ -198,7 +183,7 @@ font-size: 2em;
     text-align: center;
 }
 //------------------------------------
-//
+// mp3 audio
 //------------------------------------
 #audio {
   @media screen and (max-width:680px){
