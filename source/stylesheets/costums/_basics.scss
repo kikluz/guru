@@ -50,10 +50,8 @@ img {
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 1em;
 }
-// .container {
-// 	@include grid-column(12, $neat-grid);
-// }
 
 // Custom grid for mobile from myneat.cscss file
 .section_1 {
