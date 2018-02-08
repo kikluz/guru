@@ -32,38 +32,30 @@ title: bernadetterobertsisnotmyguru.com
 </div>
 <!-- End of wellcome panel-->
 <div class="container module">
-  <a href="http://bernadetteroberts.blogspot.com/p/booksmanuscripts_22.html" target="blank?"><h1>Visit her Website</h1></a>
+  <a href="http://bernadetteroberts.blogspot.com/p/self-published-works.html" target="blank?"><h1>Visit her Website</h1></a>
 </div>
 
-<div class="container module">
-  <div id="musics">
-    <h4>Audio Samples</h4>
-    <audio id="audio" preload="auto" tabindex="0" controls="" >
-      <source src="../audio_samples/chapter_one.mp3">
-        Your Fallback goes here
-      </audio>
-
-      <ul id="playlist">
-        <li class="active">
-          <%= link_to 'Chapter One', '../audio_samples/chapter_one.mp3' %>
-          <hr>
-        </li>
-
-        <li>
-          <%= link_to 'Chapter Two', '../audio_samples/chapter_one.mp3' %>
-          <hr>
-        </li>
-
-        <li>
-          <%= link_to 'Chapter Three', '../audio_samples/chapter_one.mp3' %>
-          <hr>
-        </li>
-
-        <li>
-          <%= link_to 'Chapter Four', '../audio_samples/chapter_one.mp3' %>
-          <hr>
-        </li>
-    </ul>
-  </div>
+<div class="container">
+    <div class="column add-bottom">
+        <div id="mainwrap">
+            <div id="nowPlay">
+                <span class="left" id="npAction">Paused...</span>
+                <span class="right" id="npTitle"></span>
+            </div>
+            <br>
+            <div id="audiowrap">
+                <div id="audio0">
+                    <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
+                </div>
+                <div id="tracks">
+                    <a id="btnPrev">&larr;</a>
+                    <a id="btnNext">&rarr;</a>
+                </div>
+            </div>
+            <div id="plwrap">
+                <ul id="plList"></ul>
+            </div>
+        </div>
+    </div>
 </div>
 
