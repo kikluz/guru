@@ -180,48 +180,40 @@ font-size: 2em;
     margin: 16px 0;
     text-align: center;
 }
+
+
 //------------------------------------
 // mp3 audio
 //------------------------------------
-
-.add-bottom { margin-bottom:2rem !important; }
-.left { float:left; }
-.right { float:right; }
-.center { text-align:center; }
-
-
-/* Audio Player Styles
-================================================== */
-
 #playlist, audio {
   max-width: 300px;
   font-size: 13px;
   .active a, li:hover a {
-  color: #ea4c89;
-}
+    color: #ea4c89;
+  }
 
-.active a {
-  text-decoration: underline;
-}
+  .active a {
+    text-decoration: underline;
+  }
 
-ul {
-  padding: 0 0 0 20px;
-}
+  ul {
+    padding: 0 0 0 20px;
+  }
 
-li {
-  list-style: decimal;
-  padding: 0 0 0 0px;
-}
+  li {
+    list-style: decimal;
+    padding: 0 0 0 0px;
+  }
 
-li a {
-  color: #000;
-  padding: 5px;
-  display: block;
-  text-decoration: none;
-}
+  li a {
+    color: #000;
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+  }
 
-li a:hover {
-  text-decoration: none;
-}
+  li a:hover {
+    text-decoration: none;
+  }
 }
 
