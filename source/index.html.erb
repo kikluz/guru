@@ -35,27 +35,32 @@ title: bernadetterobertsisnotmyguru.com
   <a href="http://bernadetteroberts.blogspot.com/p/self-published-works.html" target="blank?"><h1>Visit her Website</h1></a>
 </div>
 
-<div class="container">
-    <div class="column add-bottom">
-        <div id="mainwrap">
-            <div id="nowPlay">
-                <span class="left" id="npAction">Paused...</span>
-                <span class="right" id="npTitle"></span>
-            </div>
-            <br>
-            <div id="audiowrap">
-                <div id="audio0">
-                    <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
-                </div>
-                <div id="tracks">
-                    <a id="btnPrev">&larr;</a>
-                    <a id="btnNext">&rarr;</a>
-                </div>
-            </div>
-            <div id="plwrap">
-                <ul id="plList"></ul>
-            </div>
-        </div>
-    </div>
-</div>
+<div class="container module">
+<h2>Audio Play List</h2>
 
+<audio id="audio" preload="auto" tabindex="0" controls >
+  <source src="https://www.archive.org/download/bolero_69/Bolero.mp3">
+  Your Fallback goes here
+</audio>
+
+<ul id="playlist">
+    <li class="active">
+        <a href="https://www.archive.org/download/bolero_69/Bolero.mp3">
+            Ravel Bolero
+        </a>
+    </li>
+    
+    <li>
+        <a href="https://www.archive.org/download/MoonlightSonata_755/Beethoven-MoonlightSonata.mp3">
+            Moonlight Sonata - Beethoven
+        </a>
+    </li>
+    
+    <li>
+        <a href="https://www.archive.org/download/CanonInD_261/CanoninD.mp3">
+            Canon in D Pachabel
+        </a>
+    </li>
+    
+</ul>
+</div>
