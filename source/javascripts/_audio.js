@@ -1,11 +1,4 @@
-// External Files:
-// https://api.html5media.info/1.1.8/html5media.min.js (enables <video> and <audio> tags in all major browsers)
-// https://cdn.plyr.io/2.0.13/plyr.js
-
-
-// HTML5 audio player + playlist controls...
-// Inspiration: http://jonhall.info/how_to/create_a_playlist_for_html5_audio
-// Mythium Archive: https://archive.org/details/mythium/
+// https://codepen.io/selvamprakasam/pen/pRYPMG?limit=all&page=5&q=play+list
 jQuery(function ($) {
   init();
   function init(){
