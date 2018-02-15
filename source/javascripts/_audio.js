@@ -12,9 +12,9 @@ jQuery(function ($) {
       $("#audioPlayer")[0].play();
       $("#playlist li").removeClass("current-song");
        currentSong = $(this).parent().index();
-       $(this).parent.addClass("current-song");
-
+      $(this).parent().addClass("current-song");
     });
+    
   }
 });
 
