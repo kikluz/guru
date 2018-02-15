@@ -185,7 +185,11 @@ font-size: 2em;
 //------------------------------------
 // mp3 audio
 //------------------------------------
-
+audio {
+  @media screen and (max-width:680px){
+    max-width: 200px;
+  }
+}
 #playlist{
   list-style: none;
 }
