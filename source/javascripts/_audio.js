@@ -1,37 +1,20 @@
 // https://codepen.io/selvamprakasam/pen/pRYPMG?limit=all&page=5&q=play+list
 jQuery(function ($) {
-  init();
-  function init(){
-    var current = 0;
-    var audio = $('#audio');
-    var playlist = $('#playlist');
-    var tracks = playlist.find('li a');
-    var len = tracks.length - 1;
-    audio[0].volume = 1.0;
-    audio[0].play();
-    playlist.find('a').click(function(e){
-      e.preventDefault();
-      link = $(this);
-      current = link.parent().index();
-      run(link, audio[0]);
+ audioPlayer();
+  function audioPlayer(){
+    var currentSong = 0;
+    $("#audioPlayer")[0].src = $("#playlist li a")[0];
+     $("#audioPlayer")[0].play();
+    // do an action when clik the playlist
+    $("#playlist li a").click(function(e){
+      e.preventDefault(); 
+      $("#audioPlayer")[0].src = this;
+      $("#audioPlayer")[0].play();
+      $("#playlist li").removeClass("current-song");
+       currentSong = $(this).parent().index();
+       $(this).parent.addClass("current-song");
+
     });
-    audio[0].addEventListener('ended',function(e){
-      current++;
-      if(current == len){
-        current = 0;
-        link = playlist.find('a')[0];
-      }else{
-        link = playlist.find('a')[current];    
-      }
-      run($(link),audio[0]);
-    });
-  }
-  function run(link, player){
-    player.src = link.attr('href');
-    par = link.parent();
-    par.addClass('active').siblings().removeClass('active');
-    player.load();
-    player.play();
   }
 });
 
