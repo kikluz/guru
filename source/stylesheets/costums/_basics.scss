@@ -122,8 +122,10 @@ font-size: 2em;
   padding:1rem;
   transform:translateY(-50%);
 }
+//----------------------------------------------------
+// Fading animation
+//----------------------------------------------------
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -193,10 +195,11 @@ audio {
 #playlist{
   list-style: none;
 }
-#playlist li a{
+#playlist li a {
+  font-size: 1.5em;
   color:black;
   text-decoration: none;
 }
 #playlist .current-song a{
-  color:blue;
+  color: #1565c0;
 }
