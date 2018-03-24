@@ -16,7 +16,10 @@
 }
 
 .nav-logo {
-	
+  @include grid-media($my-desktop-grid) {
+	    font-size: 2em;
+    padding-top: 6px;
+  }
   float:    left;
   display:  block;
   color: #FF8F36;
