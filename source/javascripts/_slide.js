@@ -164,7 +164,7 @@ if (!document.fullscreenElement &&    // alternative standard method
 };
 var opts = {
   auto : {
-    speed : 5000, 
+    speed : 10000, 
     pauseOnHover : true
   },
   fullScreen : true, 
