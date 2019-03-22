@@ -107,7 +107,26 @@ img {
     text-align: center;
 }
 
+//-------------------------------------------------------------------------
+//  two cloumns 
+//-------------------------------------------------------------------------
+.column-book {
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+  float: left;
+  width: 50%;
+}
+.book_image {
+  max-width: 200px;
+}
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 //------------------------------------
 // mp3 audio
 //------------------------------------
@@ -137,6 +156,7 @@ audio {
 //----------------------------------------------------
 
 .bss-slides{
+  em { font-size: 0.7em; }
   
   position: relative;
   display: block;    
@@ -284,6 +304,3 @@ audio {
 // }
 
 
-.book_image {
-  width: 100px;
-}
