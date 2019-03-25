@@ -16,18 +16,31 @@
 }
 
 .nav-logo {
-  @include grid-media($my-desktop-grid) {
-	    font-size: 2em;
+  @media (max-width: 700px) {
+    // font-size: 2em;
     padding-top: 6px;
   }
-  float:    left;
-  display:  block;
-  color: #FF8F36;
-  padding-top: 20px;
+  height: 6em;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+  // float:    left;
+      display: inline-block;
+  color: #f7703e;
+  padding-top: 4px;
+  img {
+    max-width: 4em;
+    // align image with slogan
+    vertical-align: middle;
+  }
 }
 
 .nav-list {
   float: right;
+  display: inline-block;
+    padding-top: 2em;
 }
 
 .nav-list li {
@@ -35,8 +48,8 @@
 }
 
 .nav-list li a {
-  display:  block;
-  padding:  20px 10px;
+  // display:  block;
+  padding: 11px 12px;
   color:    #f9f9f9;
 }
 
