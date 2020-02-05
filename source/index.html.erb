@@ -36,25 +36,61 @@ title: bernadetterobertsisnotmyguru.com
 
 <div class="container">
   <div class="row">
+
     <div class="column-book">
       <h1>Buy now! </h1>
-      <% link_to 'https://www.amazon.com/Unofficial-Study-Guide-Bernadette-Roberts-ebook/dp/B07C9WWX5P/ref=sr_1_13?ie=UTF8&qid=1522815408&sr=8-13&keywords=bernadette+roberts', target: 'blank?' do %>
+      <% link_to 'https://www.amazon.com/gp/product/B084B3HPBM?pf_rd_p=ab873d20-a0ca-439b-ac45-cd78f07a84d8&pf_rd_r=8ENZWJTKGZZK07EBW0HJ   ', target: 'blank?' do %>
       <%= image_tag 'book_1.jpg', :class => 'book_image' %>
       <% end %>
-      <p>
-        This study guide contains introductions to each chapter, three different levels of questions for each chapter, a brief exploration of what a new Christology might look like, a subject index, and an author index for the book The Real Christ by Bernadette Roberts....
-      </p>
+      <br>
+     <button>
+        <% link_to "../pdf_file/a_study_guide_50.pdf", target: 'blank?' do %>
+          Download
+        <% end %> 
+      </button>
     </div>
 
     <div class="column-book">
       <h1>Buy now! </h1>
-      <% link_to 'https://www.amazon.com/Bernadette-Roberts-Gods-Big-Experiment-ebook/dp/B07BVJHDCL/ref=sr_1_10?ie=UTF8&qid=1522815408&sr=8-10&keywords=bernadette+roberts', target: 'blank?' do %>
-      <%= image_tag 'godsexperiments.jpg', :class => 'book_image' %>
+      <% link_to 'https://www.amazon.com/Saving-Christianity-Christians-free-all-ebook/dp/B0848XDK8G/ref=sr_1_2?crid=NDUEH4NNIFD1&keywords=saving+christianity&qid=1580745459&sprefix=saving+christianity%2Cdigital-text%2C236&sr=8-2   ', target: 'blank?' do %>
+      <%= image_tag 'book_2.jpg', :class => 'book_image' %>
       <% end %>
-      <p>
-        Although almost completely unknown, Bernadette Roberts was the greatest contemplative and Christian mystic of all time .......
-      </p>
+      <br>
+       <button>
+        <% link_to "../pdf_file/saving _christianity_50.pdf", target: 'blank?' do %>
+          Download
+        <% end %> 
+      </button>
+
     </div>
+    <br>
+    <br>
+    <div class="column-book">
+      <h1>Buy now! </h1>
+      <% link_to 'https://www.amazon.com/Gods-Big-Experiment-BERNADETTE-ROBERTS-ebook/dp/B0848S946N/ref=sr_1_1?keywords=god%27s+big+experiment&qid=1580745508&sr=8-1', target: 'blank?' do %>
+      <%= image_tag 'book_3.jpg', :class => 'book_image' %>
+      <% end %>
+      <br>
+       <button>
+        <% link_to "../pdf_file/revised_50.pdf", target: 'blank?' do %>
+          Download
+        <% end %> 
+      </button>
+    </div>
+
+    <div class="column-book">
+      <h1>Buy now! </h1>
+      <% link_to 'https://www.amazon.com/El-Gran-Experimento-Dios-BERNADETTE-ebook/dp/B0848X2QMZ/ref=sr_1_1?keywords=gran+experimento+de+dios&qid=1580745553&sr=8-1', target: 'blank?' do %>
+      <%= image_tag 'book_4.jpg', :class => 'book_image' %>
+      <% end %>
+      <br>
+       <button>
+        <% link_to "../pdf_file/el_experimento_50.pdf", target: 'blank?' do %>
+          Download
+        <% end %> 
+      </button>
+    </div>
+
   </div>
   <hr>
 </div>
