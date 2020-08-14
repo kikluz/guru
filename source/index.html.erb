@@ -104,6 +104,19 @@ title: bernadetterobertsisnotmyguru.com
       </button>
     </div>
 
+    <div class="column-book">
+      <h1>Buy now! </h1>
+      <% link_to 'https://www.amazon.com/dp/B08BYX5L55/ref=sr_1_1?dchild=1&keywords=A+Force+of+Nature+phoenix+kennedy&qid=1593386104&sr=8-1', target: 'blank?' do %>
+      <%= image_tag 'the_true_nature.jpg', :class => 'book_image' %>
+      <% end %>
+      <br>
+       <button>
+        <% link_to "../pdf_file/nature_of_death.pdf", target: 'blank?' do %>
+          Download 50% free
+        <% end %> 
+      </button>
+    </div>
+
   </div>
   <hr>
 </div>
