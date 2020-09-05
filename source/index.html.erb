@@ -105,6 +105,7 @@ title: bernadetterobertsisnotmyguru.com
     </div>
 
     <div class="column-book">
+      <br>
       <h1>Buy now! </h1>
       <% link_to 'https://www.amazon.com/gp/product/B08DYY3XR2?pf_rd_r=R26YVEVWTVE2ZPGGBNQK&pf_rd_p=edaba0ee-c2fe-4124-9f5d-b31d6b1bfbee', target: 'blank?' do %>
       <%= image_tag 'the_true_nature.jpg', :class => 'book_image' %>
@@ -112,6 +113,20 @@ title: bernadetterobertsisnotmyguru.com
       <br>
        <button>
         <% link_to "../pdf_file/nature_of_death.pdf", target: 'blank?' do %>
+          Download 50% free
+        <% end %> 
+      </button>
+    </div>
+
+    <div class="column-book">
+      <br>
+      <h1>Buy now! </h1>
+      <% link_to 'https://www.amazon.com/dp/B08H1D44NC/ref=sr_1_1?dchild=1&keywords=nestorius+was+right&qid=1598824320&sr=8-1', target: 'blank?' do %>
+      <%= image_tag 'nestourius.jpg', :class => 'book_image' %>
+      <% end %>
+      <br>
+       <button>
+        <% link_to "../pdf_file/nestorius_was_right_converted.pdf", target: 'blank?' do %>
           Download 50% free
         <% end %> 
       </button>
